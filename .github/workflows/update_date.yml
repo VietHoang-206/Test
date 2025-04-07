@@ -41,5 +41,5 @@ jobs:
           body: |
             Pull Request tự động được tạo bởi GitHub Actions để cập nhật ngày chỉnh sửa từ Google Drive vào file Markdown.
           branch: auto/md-update
-          base: main
+          base: VietHoang
           delete-branch: true
