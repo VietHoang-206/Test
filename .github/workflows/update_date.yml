@@ -43,3 +43,4 @@ jobs:
           branch: auto/md-update
           base: VietHoang
           delete-branch: true
+          push-to-fork: true
