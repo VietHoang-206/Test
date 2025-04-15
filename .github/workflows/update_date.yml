@@ -35,6 +35,13 @@ jobs:
 
       - name: Run update script
         run: python update_script.py
+      - name: Create branch and push changes
+        run: |
+          git checkout -b auto/md-update
+          git add docs/
+          git commit -m "Update last modified from Google Drive" || echo "No changes to commit"
+          git push origin auto/md-update
+
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
