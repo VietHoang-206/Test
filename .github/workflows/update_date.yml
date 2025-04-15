@@ -46,7 +46,7 @@ jobs:
           git checkout -b auto/md-update
           git add docs/
           git commit -m "Update last modified from Google Drive" || echo "No changes to commit"
-          git push origin auto/md-update
+
 
 
       - name: Create Pull Request
